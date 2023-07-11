@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Yarı çapı verilen çemberin alan ve çevresini ekrana yazdıran fonksiyon:
+      // formül: Alan = pi.r*r  | Çevre = 2.pi.r
+      function cemberAlan(yariCap){
+        const pi = 3.14
+        return alert(pi*yariCap*yariCap);
+      }
+      function cemberCevre(yariCap){
+        const pi = 3.14
+        return alert(pi*yariCap*2);
+      }
+
+      var s1 = Number(prompt("Yarı çapı giriniz :"));
+      cemberAlan(s1);
+      cemberCevre(s1);
+    </script>
+</body>
+</html>

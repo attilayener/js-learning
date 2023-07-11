@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//N adet sayinin ortalamasi:
+
+      var kume = new Array(),i=0,toplam=0,ortalama=0;
+      var adet = Number(prompt("Kume kac adet elamandan olusacak ? "));
+
+      for(i;i<adet;i++){
+        kume[i] = Number(prompt(i+". sayiyi giriniz : "));
+        toplam = toplam + kume[i]
+      }
+      //toplamın yazdırılması:
+      document.write(toplam+"<br>");
+      //ortalamasının yazdırılması:
+      ortalama = toplam / kume.length;
+      document.write(ortalama);
+
+    </script>
+</body>
+</html>

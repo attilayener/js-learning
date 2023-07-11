@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+    //   class Araba{
+    //     constructor(marka,model,renk)
+    //     {
+    //     this.marka = marka;
+    //     this.model = model;
+    //     this.renk  = renk;
+    //     }
+    // }
+    //   var girdi1=(prompt("marka :"));
+    //   var girdi2=(prompt("model :"));
+    //   var girdi3=(prompt("renk :"));
+
+    //   var araba1 = new Araba(girdi1,girdi2,girdi3);
+    //   yaz(araba1.marka);
+
+
+
+    class Student{
+      constructor(orderNo,name,surName){
+        this.siraNo = Number(orderNo);
+        this.isim = name;
+        this.soyAd = surName;
+      }
+    }
+
+    var ilkOgrenci = new Student(13020404,"Attila","YENER");
+    yaz(ilkOgrenci.siraNo+"<br>"+ilkOgrenci.isim+"<br>"+ilkOgrenci.soyAd+"<br>")
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

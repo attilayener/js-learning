@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="selam()">
+  
+    <form>
+      <p>Karesi alinacak sayi:<input type="text" id="sayi"></p><br>
+      <input type="button" value="Tiklaa" onclick="kareAl()"><br>
+      <p>
+        <h1>Sonuç: </h1>
+        <h3 id="sonuc">..</h3>
+      </p>
+
+    </form>
+    
+   <script>
+
+  function kareAl(){
+    var x = document.getElementById("sayi").value;
+    var kare = x*x;
+    document.getElementById("sonuc").innerText=kare;
+  }
+
+    </script>
+</body>
+</html>

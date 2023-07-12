@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+<form>
+  Vize puaninizi giriniz : <input type="text" id="vize"><br>
+  <br>
+  <input type="button" value="Hesapla" onclick="hesap()"><br>
+  <br>
+  <h1>SONUÇ: </h1>
+  <p id="sonuc">. . .</p>
+</form>
+
+   <script>
+    function hesap(){
+      var x = Number(document.getElementById("vize").value);
+      if(isNaN(x) || x < 1 || x > 100){
+        alert("Lütfen vize notunuzu kontrol ediniz...(0 ile 100 arasinda bir değer giriniz.)");
+      }else{
+        var hesapSonucu=Number(x);
+        document.getElementById("sonuc").innerText=hesapSonucu;
+      }
+    }
+
+    </script>
+</body>
+</html>

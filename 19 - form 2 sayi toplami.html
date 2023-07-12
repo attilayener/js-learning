@@ -10,8 +10,9 @@
 <body onload="selam()">
   
     <form>
-      <p>Karesi alinacak sayi:<input type="text" id="sayi"></p><br>
-      <input type="button" value="Hesapla" onclick="kareAl()"><br>
+      <p>Sayi 1 :<input type="text" id="sayi1"></p><br>
+      <p>Sayi 2 :<input type="text" id="sayi2"></p><br>
+      <input type="button" value="Hesapla" onclick="topla()"><br>
       <p>
         <h1>Sonuç: </h1>
         <h3 id="sonuc">..</h3>
@@ -21,10 +22,11 @@
     
    <script>
 
-  function kareAl(){
-    var x = document.getElementById("sayi").value;
-    var kare = x*x;
-    document.getElementById("sonuc").innerText=kare;
+  function topla(){
+    var x1 =Number( document.getElementById("sayi1").value);
+    var x2 =Number( document.getElementById("sayi2").value);
+    var toplam = x1+x2;
+    document.getElementById("sonuc").innerText=toplam;
   }
 
     </script>

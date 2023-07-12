@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="govdeId" class="govdeClass">
+  
+    <p id="buton">Lorem ipsum dolor sit.</p>
+  
+  <input  type="button" value="Tikla" onmouseover="tarih()" onmouseout="eski()" onclick="tarih()">
+    <script>
+      function  tarih(){
+        document.getElementById("buton").innerHTML=Date();
+      }
+      function eski(){
+        document.getElementById("buton").innerHTML="Lorem ipsum Attila...."
+        document.getElementById("buton").innerHTML="<img height='120' src='https://pbs.twimg.com/media/FQaC7OIWYAMflPO.jpg'>";
+      }
+
+    </script>
+</body>
+</html>
